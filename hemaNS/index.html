@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parallax Scrolling Website</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KyZXEAg3QhqLMpG8r+8fhAXLRVbey3Eh3l+ppcV6LQioPrl7NNQW7Hw1q6u0Sm4h5xT+gD78Ggt53/bZmZh5bA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="navbar navbar-expand-lg navbar-light fixed-top"  id="header">
+      <a class="navbar-brand animated-brand" href="#" style="color: aliceblue"
+        >FREE TO<sup id="rotate">oo</sup> USE</a
+      >
+      <button
+        style="background-color: whitesmoke"
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link home-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link card-link" href="#about">Card</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link services-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link contact-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <form class="form-inline mx-auto">
+          <input
+            id="search"
+            name="search"
+            type="text"
+            placeholder="Search what you want ?"
+          /><input id="search_submit" value="Searcher" type="submit" />
+        </form>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner" id="home">
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        class="video-bg"
+        id="background-video"
+      >
+        <source src="C:\Users\salab\Downloads\67358-521707474_small.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="container text-center">
+        <div class="music">
+          <h1>Free music for video creators</h1>
+          <p>
+            Safe background music with no copyright claims.<a
+              href="//http://feedmusic.com/#/"
+            ></a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards-section pt-5" id="about">
+      <div class="container">
+        <div class="card-column column-0">
+          <div class="card card-color-0">
+            <div class="border"></div>
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/deathtostock-00.jpg"
+            />
+            <h1>Hey now, you're an allstar</h1>
+          </div>
+          <div class="card card-color-2">
+            <div class="border"></div>
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/deathtostock-02.jpg"
+            />
+            <h1>Hey now, you're a rock star</h1>
+          </div>
+        </div>
+        <div class="card-column column-1">
+          <div class="card card-color-1">
+            <div class="border"></div>
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/deathtostock-01.jpg"
+            />
+            <h1>Get your game on, go play</h1>
+          </div>
+          <div class="card card-color-3">
+            <div class="border"></div>
+            <img
+              src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/deathtostock-03.jpg"
+            />
+            <h1>Get the show on, get paid</h1>
+          </div>
+        </div>
+      </div>
+
+      <div id="cover" class="cover"></div>
+
+      <div id="open-content" class="open-content">
+        <a href="#" id="close-content" class="close-content"
+          ><span class="x-1"></span><span class="x-2"></span
+        ></a>
+        <img id="open-content-image" src="" />
+        <div class="text" id="open-content-text"></div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial" id="services">
+      <div class="container text-center">
+        <h2>Free & safe to use in your personal</h2>
+        <p>user-generated content on various platforms</p>
+        <a href="https://www.youtube.com/@FreeToUseMusic" class="button-div"><i class="fab fa-youtube"></i> YouTube</a>
+        <a href="https://www.facebook.com/freetousemusic" class="button-div"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://open.spotify.com/user/11shkdqyaue5ptj4obc2m4j11" class="button-div"><i class="fab fa-tiktok"></i>Spotify</a>
+        <a href="https://www.instagram.com/freetousemusic/" class="button-div"><i class="fab fa-instagram"></i> Instagram</a><br><br>
+        <div class="container text-center">
+        
+          <p id="feedback">Feedback from a customer...<br />Customer Name</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center" id="contact">
+      <div class="container1">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://freetouse.com/privacy-policy">Privacy Policy</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://freetouse.com/terms-and-conditions">Terms of Service</a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://freetouse.com/music">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
